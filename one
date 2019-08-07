@@ -1,0 +1,119 @@
+using System;
+
+namespace C_Sharp_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //1 feladat
+
+
+            Console.WriteLine("Hello World!");
+
+
+            /* 2 feladat
+              Készítsen programot, ami kiírja a képernyőre:
+            Hello ....!
+            Nagyon jó ez a program!
+            Üdv, a program.
+            Írj programot mely az előző feladatot oldja meg, mindössze egyetlen System.Console.WriteLine parancsal.
+            Használj speciális karakterek a megoldás során. (\n \t)*/
+
+            Console.WriteLine("Hello ....! \nNagyon Jó ez a program!\nÜdv, a program.\n");
+
+            /*3. Feladat
+            Készítsen programot, 5x8 csillagokból álló téglalapot rajzol ki a képernyőre.*/
+
+            Console.WriteLine("********\n********\n********\n********\n********\n");
+
+            /*4. Feladat
+            Készítsen programot, amely a nevét bekeretezi csillagokkal.*/
+
+            Console.WriteLine("******\n*Andi*\n******\n");
+
+            /*5. Feladat
+            Írassa ki a képernyőre a következő szöveget, úgy hogy egyetlen print utasítást használjon csak!
+            "A 'whitespace' vagy 'white space' angol szóösszetétel, jelentése fehér tér.
+            Az informatikában, elsősorban a
+            szövegszerkesztésben és
+            programozásban
+            használatos kifejezés.*/
+            Console.WriteLine("A 'whitespace' vagy 'white space' angol szóösszetétel, jelentése fehér tér.\nAz informatikában, elsősorban a szövegszerkesztésben és programozásban használatos kifejezés. \t\n\t\nAlapvetően azokat a karaktereket értjük alatta, amelyek nem láthatóak a szövegben, viszont valamilyen egyedi funkcióval bírnak.Nincs elterjedt magyar kifejezés rá. \n\t\t\t\n-- A Wikipédiából, (a szabad enciklopédiából)" +
+                "");
+
+            /*7. Feladat
+Készíts programot, ami elvégzi, majd az eredményét a képernyőre írja az alábbi műveleteknek:
+a. 55*10 // A képernyőn ez legyen látható: 55*10=550
+b. 64-20 // A képernyőn ez legyen látható: 64 - 20 = 44
+c. 12+86
+d. 52+24*3
+e. (52+24)*3
+f. 12%10
+g. 10/4
+h. 10/4.0
+i. 10.0/4
+j. 10.0/4.0*/
+
+            
+            Console.WriteLine($"55*10={55*10}");
+            Console.WriteLine($"64-20={ 64-20}");
+            Console.WriteLine($"12+86={12+86}");
+            Console.WriteLine($"(52+24)*3={(52+24)*3}");
+            Console.WriteLine($"12%10={12%10}");
+            Console.WriteLine($"10/4={10/4}");
+            Console.WriteLine($"10/4.0={10/4.0}");
+            Console.WriteLine($"10.0/4={10.0/4}");
+            Console.WriteLine($"10.0/4.0={10.0/4.0}");
+
+            /*8. Feladat
+Hozzon létre egy egész típusú változót, az azonosítója legyen "alma", az értéke pedig 10.
+a. Írd ki a változó értékét a képernyőre, és alá az alma szót. Figyeld meg, mi a különbség a két sor kódja között.
+b. Írd ki a változó értékének kétszeresét!
+c. Írd ki a változó értékénél kettővel kevesebb értéket!
+d. Írd ki a változó értékének a felét!
+e. Írd ki a változó értékének a négyzetét!
+f. Írd ki a változó 2-vel, 3-mal, 5-tel való osztási maradékát!*/
+            int alma = 10;
+            Console.WriteLine("\n8 feladat");
+            Console.WriteLine(10);
+            Console.WriteLine(alma);
+            Console.WriteLine(alma*2);
+            Console.WriteLine(alma-2);
+            Console.WriteLine(alma/2);
+            Console.WriteLine(alma*alma);
+            Console.WriteLine(alma%2);
+            Console.WriteLine(alma%3);
+            Console.WriteLine(alma%5);
+
+            /*9. Feladat
+Hozzon létre egy egész típusú korte azonosítója változót és állítsa az értékét 5-re, majd végezze el vele az alábbi
+műveleteket.
+Minden művelet után írja ki a változó értékét a képernyőre újra.
+a. Növelje a változó értékét 1-gyel.
+b. Növelje a változó értékét 5-tel.
+c. Csökkentse a változó értékét 1-gyel.
+d. Csökkentse a változó értékét 3-mal.
+e. Szorozza meg a változót 4-gyel.
+f. Ossza el a változót 2-vel.
+g. Adja értékül a változóna
+k a 3-mal vett osztási maradékát.*/
+            int korte = 5;
+            Console.WriteLine();
+            korte++;
+            Console.WriteLine(korte);
+            korte += 5;
+            Console.WriteLine(korte);
+            korte -= 3;
+            Console.WriteLine(korte);
+            korte *= 4;
+            Console.WriteLine(korte);
+            korte /= 2;
+            korte = 5 % 3;
+            Console.WriteLine(korte);
+
+
+            Console.ReadKey();
+        }
+    }
+}
