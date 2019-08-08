@@ -1,0 +1,167 @@
+using System;
+
+namespace C_Sharp_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            /* 1.Feladat
+ Hozzon létre egy egész típusú változót, az azonosítója legyen "a".Ezt úgy hívjuk, hogy deklaráció.
+ Deklaráljon három azonos, egész típusú változót, amelyeknek a neve legyen ”b”,”c” és ”d”.
+ Adjon kezdeti érteket az ”a” változónak.Az érteke legyen 6.Ezt úgy hívjuk, hogy inicializáljuk a változót.
+ Írja ki az ”a” változó értékét a képernyőre. Írja ki a változót egy új utasításban, úgy hogy az legyen látható,
+hogy Az ’a’ valtozo aktualis erteke 6.
+ Változtassa meg az ”a” változó értéket 1916 - ra, majd írja ki ismét az ”a” változó értéket.
+ Adjon hozzá az ”a” változó értékéhez 100 - at, majd írja ki az ”a” változó értéket.
+ Vonja ki az ”a” változó értékéből a születési évét, majd a képernyőre a megfelelő értékeket behelyettesítve
+írja ki, hogy En, [sajat nevem] [X]
+        eves vagyok.
+            int a=0;
+            int b;
+            a += 6;
+            Console.WriteLine("a = {0}",a);
+
+            
+            a += 1910;
+            Console.WriteLine("a = {0}",a);
+
+            a += 103;
+            Console.WriteLine("a = {0}", a);
+
+            a -= 1998;
+
+            Console.WriteLine("Én, Andi {0} éves vagyok", a);
+
+            /*2. Feladat
+ Deklaráljunk egy valós típusú, c azonosítójú változót.
+ Adjuk neki értékül az 5-öt.
+ Írjuk ki a képernyőre a változó értékét.
+ Írjuk ki a képernyőre a kétszeresét, anélkül, hogy a változó értékét módosítanánk.
+ Növeljük meg az értékét 3-mal, majd írjuk ki a képernyőre.
+ Deklaráljunk egy egész típusú, d azonosítójú változót.
+ Adjunk neki értékül 3-at.
+ Írjuk ki a képernyőre a 10-szeresét.
+ Számoljuk ki a két változó hányadosát (c/d), és tároljuk el egy megfelelő típusú, e azonosítójú
+változóban az eredményt.
+ Írjuk ki az e változó értékét a képernyőre.
+
+            int c = 5;
+            Console.WriteLine(c);
+            Console.WriteLine(c*2);
+            Console.WriteLine(c+3);
+            int d = 3;
+            Console.WriteLine(d*10);
+            int e = c / d;
+            Console.WriteLine(e);
+
+
+            /*Hozzunk létre két egész típusú változót, azonosítójuk legyen barack és korte, értékük pedig 50 és 30. Végezzük
+el az alapműveleteket a változókkal, és az eredményt írjuk ki a képernyőre az alábbi formában (barack + korte =
+50 + 30 = 80)*/
+            int barack = 50;
+            int korte = 30;
+            Console.WriteLine("\nbarack + korte = {0}+{1} = {2}", barack, korte, barack+korte);
+            Console.WriteLine("\nbarack - korte = {0}-{1} = {2}", barack, korte, barack - korte);
+            Console.WriteLine("\nbarack * korte = {0}*{1} = {2}", barack, korte, barack * korte);
+            Console.WriteLine("\nbarack / korte = {0}/{1} = {2}", barack, korte, barack / korte);
+
+            /*4. Feladat
+Hozzuk létre az alábbi változókat (a = 7; b = 1; c = 3;) majd írjuk ki a képernyőre az alábbi kifejezést, a kifejezést
+a behelyettesített változókkal, és a kifejezés értékét.
+(a-b)/c
+(a+b)*(2a-c)
+(3a-3b)/c
+2ac+4b
+
+            int a = 7;
+            int b = 1;
+            int c = 3;
+            Console.WriteLine("\n(a-b)/c = ({0}-{1})/{2} = {3}",a,b,c, (a-b)/c);
+            Console.WriteLine("(a+b)*(2a-c) = ({0}+{1})*(2*{2}-{3}) = {4}",a,b,a,c, (a + b) * (2*a - c));
+            Console.WriteLine("(3a-3b)/c = (3*{0}-3*{1})/{2} = {3}",a,b,c, (3*a - 3*b) / c);
+            Console.WriteLine("2ac+4b = 2*{0}*{1} + 4*{2} = {3}", a,c,b, 2*a*c + 4*b);
+
+
+
+            /*7. Feladat
+Írjon programot, amely bekér a felhasználótól két valós számot, majd kiszámítja:
+ az összegüket
+ különbségüket
+ szorzatukat
+ hányadosukat
+ mindkét szám négyzetét és köbét!
+            Console.WriteLine("Első szam = ?");
+            int szam1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Második szám = ?");
+            int szam2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("\n*************\n* x  = {0}   *\n*************\n* y  = {1}    *\n*************\n* x+y = {2} *\n*************\n* x-y = {3} *\n*************\n* x*y = {4} *\n*************\n* x/y = {5} *", szam1, szam2, szam1+szam2, szam1-szam2, szam1*szam2, szam1/szam2);
+
+            /*8. Feladat
+Írjon programot, amely bekér egy d valós számot, és egy n pozitív egész számot! Kerekítse a d valós számot n tizedes
+jegyre! Kiíratás pl.: A/az 5362.8536 2 tizedesjegyre kerekített értéke: 5362.85
+            Console.WriteLine("\n\nValós szám = ?");
+            double d = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Mennyi tizedes jegyre kerekítsük? = ?");
+            int n = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(" A/az {0} {1} tizedesjegyre kerekített értéke: {2}",d,n, Math.Round(d,n));
+            /*9. Feladat
+Írjon programot, amely bekér a felhasználótól egy forint összeget, majd átváltja Euro-ra, és USA dollárra! (Az aktuális
+árfolyamokat keresse meg az interneten!) Kiíratás pl.: 54700.0 HUF = 184.23 EUR = 250.76 USD
+            Console.WriteLine("Adj meg bármennyi forintot");
+            int huf = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("\n{0} HUF = {1} EUR = {2} USD", huf, huf*324.995, huf* 289.954);
+
+            /*10. Feladat
+Írjon programot, mely bekéri a felhasználótól egy háromszög két oldalát, a két oldal által közbezárt szögét
+(fokokban), és kiszámolja a háromszög területét két tizedesjegyre kerekítve!
+ Keresse meg az interneten a megfelelő képletet!
+ Vegye figyelembe, hogy a Math osztály trigonometrikus függvényei radiánban várják a szögeket!
+Kiíratás pl.:
+A háromszög adatai:
+Egyik oldala = 5.0 hosszúságegység
+Másik oldala = 8.0 hosszúságegység
+Általuk közbezárt szög = 30.0 fok
+A háromszög területe: T = 10.0 területegység
+            Console.WriteLine("\nHáromszög egyik oldala ?");
+            double a = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Háromszög másik oldala ?");
+            double b = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Általukközbezárt szög?");
+            double c = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("A háromszög adatai:\nEgyik oldala = {0} hosszúságegység\nMásik oldala = {1} hosszúságegység\nÁltaluk közbezárt szög = {2} fok\nA háromszög területe: T = {3} területegység", Math.Round(a,1), Math.Round(b, 1),Math.Round(c, 1),(a*c)/2);
+
+            /*11. Feladat
+Egy optikai cég a szemüvegkeret árából annyi % kedvezményt ad, mint a vevő életkora! (A lencsékre nem ad
+kedvezményt!) Írjon Java programot, amely bekéri az aktuális évet, a vevő születési évét, a szemüvegkeret normál
+árát, a lencsék árát, majd kiszámítja a szemüveg (keret+lencse) vételárát!
+Kiíratás pl.:
+Ön a szemüvegkeret árából, ami 38560 Ft, 27% kedvezményt kap!
+A szemüveglencse ára: 45759 Ft
+----------------------------
+Szemüvege vételára: 73908 Ft*/
+            Console.WriteLine("Aktuális év?");
+            int ev = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Mikor születtél? (év)");
+            int szulev = Convert.ToInt32(Console.ReadLine());
+            int kor = ev - szulev;
+            Console.WriteLine("SZemüvegkeret normál ára?");
+            int keretar = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("lencse ára?");
+            int lencse = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Ön a szemüvegkeret árából, ami {0} Ft, {1}% kedvezményt kap!", keretar,kor);
+            Console.WriteLine("A szemüveglencse ára: {0} Ft",(lencse));
+            Console.WriteLine("----------------------------");
+            Console.WriteLine("Szemüvege vételára: {0} Ft", (keretar-(keretar/100)*kor)+lencse);
+
+
+            Console.ReadKey();
+
+
+
+
+        }
+    }
+}
